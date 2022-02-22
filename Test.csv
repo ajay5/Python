@@ -1,0 +1,20 @@
+Sr.No,Question From Fractal,Answer From Levi's
+1,What is the total number of source systems that would be part of the scope,"Data available on GCP and AWS.  
+Some localized master data attributes need to be gathered manually."
+2,Initialy how many countries data we have to add into the dashboard ?,"Start with India and Middle East, followed by Japan
+Framework should be built in flexible manner to accomadate all markets."
+3,In what format the data will stored for existing countries ?,"Once access to GCP is granted, data for all markets can be accessed from it."
+4,We assume all the data stored in AWS ?,Yes.  Also available on GCP
+5,"Is there any data cleanse activity required. If yes,can you please confirm how much extent we have to do the cleanup",Data is accurate and no cleansing is expected.
+6,How is the data quality for other countries ,"Data (Sellout for retail/ecommerce, Shipment for wholesale) is accurate and used in our regular business reporting."
+7,"The data is in same format as existing China data is ? In terms of  (Dimensions, Granularity)","Transaction data - Yes.
+Master data (store, product) would have few localized attributes (e.g. bricks for India).  
+Dimensions should be common to promote roll-up of numbers.
+Computation logic for metrics is same for all markets."
+8,Is there a need for data transformation ? How many ETL jobs are running currently ?,"Not required as data is already transformed. 
+Need to factor in structure to handle hierarchies (store, product) in reports/dashboards to allow drill-down/drill-across capabilities."
+9,Do we need to create the data model for this exercise ?,Not a priority.
+10,what is the current process of creating dasboard ? Is there data warehouse/database in place . Please elaborate,"Dashboards are created in tableau and published on company's tableau portal.
+Links to data source (HANA) is built into the portal.  If new connection links are required that can be created.
+Said that, how the dashboard would work with cloud is to be checked."
+11,What is the size of total data which we have to brint into the dashboard,Will get it from platform team.
